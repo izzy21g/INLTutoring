@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* reset */
+*{
+    margin:0;
+    padding:0;
+}
+
+/* general */
+html {
+    overflow-x: hidden;
+}
+body {
+    overflow: hidden;
+    background-color: #666666;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    margin: 2em;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: white;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1em;
+    color: white;
+}
+
+/* links */
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #782492;
+}
+
+a:active {
+    color: #1c0d3d;
+}
+
+button {
+    z-index: 3;
+}
+
+/* buttons */
+.dark_button {
+    background-color: #1C0D3D;
+    padding: 14px 10px;
+    border: none;
+    outline: 0;
+    width: 135px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.dark_button:hover {
+    background-color: #301665;
+}
+
+.dark_button:active {
+    background-color: #080411;
+}
+
+.light_button {
+    background-color: #782492;
+    padding: 12px 28px;
+    border: none;
+    outline: 0;
+    width: 200px;
+    color: white;
+    font-size: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.light_button:hover {
+    background-color: #992EBC;   
+}
+
+.light_button:active {
+    background-color: #561A6B;
+}
+
+/* nav bar */
+nav {
+    position: sticky;
+    top: 1em;
+    height: 3em;
+    width: 100%;
+    z-index: 5;
+}
+
+nav ul li {
+    float: right;
+    padding: auto;
+    margin-right: 1em;
+    list-style-type: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #c38bcb;
+}
+
+nav ul li:active {
+    color: #1c0d3d;
+}
+
+.links {
+    padding-top: 0.7em;
+}
+
+.links li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+/* hero main */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 55em;
+}
+
+.hero_text {
+    position: relative;
+    top: 10em;
+    left: 65%;
+    width: 25%;
+    z-index: 4;
+}
+
+.hero_art {
+    position: relative;
+    top: -15em;
+    left: ;
+    width: 90%;
+    margin: auto;
+    height: auto;
+}
+
+/* hero text */
+.hero h1 {
+    width: 100%;
+}
+
+.inl {
+    color: #782492;
+    display: inline;
+}
+
+.hero p {
+    width: 16em;
+    padding: 0.7em 1em 0.7em 1em;
+    margin: 0;
+    position: relative;
+    top: 0.7em;
+}
+
+.hero button {
+    position: relative;
+    top: 2em;
+    left: 0em;
+}
+
+/* hero art */
+.hero_art .hero_bg {
+    width: 100%;
+    max-height: 100%;
+}
+
+.hero_art .mobile_hero_bg {
+    display: none;
+}
+
+.hero_art .line1 {
+    background-color: #782492;
+    float: right;
+    width: 30%;
+    height: 1.5em;
+    position: relative;
+    top: -44em;
+    left: 8%;
+}
+
+.hero_art .line2 {
+    position: relative;
+    width: 100%;
+    height: 1.5em;
+    background-color: #782492;
+    top: -17em;
+    left: -65%;
+    z-index: 2;
+}
+
+/* hero socials */
+.socials_hero {
+    position: relative;
+    top: -5em;
+    left: 90%;
+    display: flex;
+    justify-content: center;
+    width: 10%;
+}
+
+.socials_hero li {
+    float: left;
+    list-style-type: none;
+    margin: 0.5em;
+    cursor: pointer;
+}
+
+.socials_hero li img {
+    height: 32px;
+    width: auto;
+}
+
+/* about section */
+.about {
+    margin-top: 3em;
+    position: relative;
+    top: -2em;
+    height: 30em;
+}
+
+.about h2 {
+    font-weight: bold;
+}
+
+.math {
+    position: relative;
+    top: ;
+    left: ;
+    width: 31%;
+    height: 20em; 
+    background-image: url(math_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.math h2 {
+    width: ;
+    position: relative;
+    top: 1em;
+    left: 1.5em;
+}
+
+.math p {
+    width: 70%;
+    position: relative;
+    top: 1.75em;
+    left: 4em;
+}
+
+.science {
+    position: relative;
+    top: -15em;
+    left: 34%;
+    width: 31%;
+    height: 18em;
+    background-image: url(science_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.science h2 {
+    position: relative;
+    top: 0.5em;
+    left: 4em;
+    width: ;
+}
+
+.science p {
+    position: relative;
+    width: 60%;
+    top: 1em;
+    left: 7em;
+}
+
+.history {
+    width: 31%;
+    height: 28em;
+    position: relative;
+    top: -38.5em;
+    left: 69%;
+    background-image: url(history_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.history h2 {
+    width: ;
+    position: relative;
+    top: 3em;
+    left: 2em;
+}
+
+.history p {
+    width: 70%;
+    position: relative;
+    left: 3.5em;
+    top: 5em;
+}
+
+/* questions or contact */
+.contact {
+    position: relative;
+    top: ;
+    height: 25em;
+    border: 10px solid #782492;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h1 {
+    position: relative;
+    top: -0.7em;
+    z-index: 2;
+    background-color: #666666;
+    display: inline-block;
+    width: 40%;
+    padding: 0em 2em;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    display: block;
+    position: relative;
+    top: 3em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact button {
+    display: block;
+    position: relative;
+    top: 14em;
+    margin: 0 auto;
+    margin: 0 auto;
+}
+
+/* footer */
+footer {
+    width: 110%;
+    height: 30em;
+    position: relative;
+    left: -5%;
+    top: 4em;
+    background-color: #1C0D3D;
+    display: flex;
+}
+
+footer ul {
+    position: relative;
+    top: ;
+    left: ;
+    
+    margin: auto;
+}
+
+footer ul li {
+    float: left;
+    list-style-type: none;
+    margin: 0em 1em;
+    cursor: pointer;
+}
+
+footer ul img {
+    width: 3.5em;
+}
+
+@media only screen and (max-width: 1660px) {
+    .hero {
+        height: 67em;
+    }
+}
+
+@media only screen and (min-width: 1450px) {   
+    h1 {
+        font-size: 3em;
+        color: white;
+    }
+    
+    h2 {
+        font-size: 2em;
+        color: white;
+        font-weight: normal;
+    }
+    
+    p {
+        font-size: 1.5em;
+        color: white;
+    }
+
+    .hero {
+        height: 80em;
+    }
+
+    .hero_text {
+        position: relative;
+        top: 20em;
+    }
+
+    .hero_art {
+        position: relative;
+        top: -20em;
+    }
+
+    .about {
+        height: 40em;
+    }
+
+    .math {
+        width: 31%;
+        height: 30em;
+        position: relative;
+        top: ;
+    }
+
+    .science {
+        width: 31%;
+        height: 30em;
+        position: relative;
+        top: -20em;
+    }
+
+    .history {
+        width: 31%;
+        height: 30em;
+        position: relative;
+        top: -60em;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .hero {
+        height: 55em;
+    }
+}
+
+@media only screen and (max-width: 868px) {
+    .hero {
+        height: 50em;
+    }
+
+    .hero_art {
+        height: 45em;
+    }
+
+    .hero_art img {
+        display: none;
+    }
+
+    .hero_art .mobile_hero_bg {
+        display: block;
+        position: relative;
+        top: ;
+        left: -99%;
+        width: 220%;
+    }
+
+    .hero_art .line1 {
+        display: none;
+    }
+
+    .hero_art .line2 {
+        display: none;
+    }
+
+    .hero_text {
+        position: relative;
+        top: 11em;
+        left: 30%;
+    }
+    
+    .about {
+        height: 60em;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .math {
+        width: 23em;
+        height: 17em;
+        margin: 0 auto;
+        position: relative;
+        left: -5%
+    }
+
+    .science {
+        width: 23em;
+        height: 16em;
+        position: relative;
+        top: 1em;
+        left: 5%;
+        margin: 0 auto;
+    }
+
+    .history {
+        width: 23em;
+        height: 24em;
+        position: relative;
+        top: 2em;
+        left: -5%;
+        margin: 0 auto;
+    }
+
+    .contact h1 {
+        font-size: 1.5em;
+        top: -1.5em;
+    }
+
+}
+
+@media only screen and (max-width: 606px) {
+    nav .links {
+        font-size: 0.75em;
+        padding-top: 1.2em;
+    }
+    
+    .hero {
+        height: 40em;
+    }
+    
+    .hero_art {
+        height: 30em;
+    }
+
+    .hero_text {
+        top: 5em;
+        left: 20%;
+    }
+
+    .about {
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    nav .links {
+        font-size: 0.65em;
+        padding-top: 1.5em;
+    }
+
+    .hero {
+        height: 30em;
+    }
+    
+    .hero_art {
+        height: 25em;
+    }
+
+    .hero_art .mobile_hero_bg {
+        width: 300%;
+        top: ;
+        left: -152%;
+    }
+
+    .hero_text {
+        top: 3em;
+        left: 5%;
+    }
+
+    .math {
+
+    }
+
+    .science {
+        left: -10%;
+    }
+
+    .history { 
+
+    }
+}
